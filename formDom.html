@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Dom</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="/archivo.php" name="myForm" onsubmit="return validateForm()" method="post">
+        Nombre: <input type="text" name="fname" ><br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <p>Si hace click sin llenar el campo, el navegador mostrara un mensaje de error</p>
+    <script src="../js/form.js"></script>
+</body>
+</html>

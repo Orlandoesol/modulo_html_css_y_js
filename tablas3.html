@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y formularios</title>
+</head>
+<body>
+    <h1>Tabla mas formulario con selectores</h1>
+    <form action="/submit" method="post">
+        <table border="1">
+            <tr>
+                <th>Campo</th>
+                <th>Entrada</th>
+            </tr>
+            <tr>
+                <td>País:</td>
+                <td>
+                    <select name="pais" id=""  required>
+                        <option value="">Selecciona tu país</option>
+                        <option value="mx">México</option>
+                        <option value="co">Colombia</option>
+                        <option value="ar">Argentina</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Lenguajes de programacion</td>
+                <td>
+                    <input type="checkbox" name="lenguajes[]" value="php">PHP<br>
+                    <input type="checkbox" name="lenguajes[]" value="js">Javascript<br>
+                    <input type="checkbox" name="lenguajes[]" value="css">CSS
+                </td>
+            </tr>
+            <tr>
+                <td>Fecha de nacimiento:</td>
+                <td><input type="date" name="fecha_nacimiento" id="" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Enviar">
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+    
+</body>
+</html>

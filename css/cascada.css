@@ -1,0 +1,76 @@
+/* Tipo de selectores*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Sel. Elemento*/
+p {
+    color: blue !important;
+}
+
+/* Sel. Clase*/
+.texto {
+    font-size: 20px;
+}
+
+/* Sel. Id*/
+#titulo {
+    font-size: 30px;
+}
+
+/*Sel. Pseudo-clases*/
+a:hover {
+    color: red;
+}
+
+/*Sel. pseudo-elemento*/
+
+p::first-letter {
+    font-size: 2em;
+    color: orange
+}
+
+/* Selector de descendiente*/
+
+p span {
+    color: green;
+    font-weight: bold;
+}
+
+/*Sel. hijo*/
+
+ul > li {
+    list-style-type: georgian;
+}
+
+/* Adyacente */
+
+h4 + p {
+    margin-top: 15px;
+}
+
+/* Selector grupo*/
+
+h2, h3, p {
+    color: blueviolet;
+}
+
+/* Selector grupo*/
+a[href*="example"] {
+    text-decoration: none;
+}
+
+img[src^="data"] {
+    border: 5px inset #f31212;
+}
+
+
+
+
+
+
+
+

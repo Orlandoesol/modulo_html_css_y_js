@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cascada.css">
+    <title>Clase I CSS</title>
+</head>
+<body>
+    <!-- NO ES BUENA PRACTICA -->
+    <!-- <style>
+        p {
+            color: blue;
+        }
+    </style> -->
+    <h1>Estilos css</h1>
+    
+    <p style="color: red;">Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Reiciendis, 
+        perspiciatis vitae consequuntur corporis beatae fugit, 
+        magni nemo totam alias ipsam cumque similique tempore. 
+        Ratione minus cupiditate sed neque, harum debitis.</p>
+
+    <p style="color: rgba(132, 59, 233, 0.741);">Texto</p>
+
+    <h4 id="titulo">Titulo Principal</h4>
+    <p class="texto">Ejemplo de parrafo.</p>
+    <p>Este es otro parrafo que muestra un <span>texto span</span></p>
+
+    <h2>Encabezad0 secundario</h2>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+    </ul>
+
+    <p>Este parrafo tiene un enlace <a href="#">Enlace</a> que cambia al pasar el mouse</p>
+
+    <input type="text" placeholder="Campo de texto">
+    <input type="button" value="Boton">
+    
+    <h3><a href="example">Otros selectores</a> </h3>
+
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQIDBAYFB//EADsQAAICAQICBQkGBAcAAAAAAAABAgMEBRESIRMxQVFSBhUzU1RhgZGTFBYiNHKxQ3FzkgclQkSh0fD/xAAaAQEBAAMBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKxEBAAIBAwQBAwMFAQAAAAAAAAECAwQREhMxQVEhBRRhMkJxJDOBkaEj/9oADAMBAAIRAxEAPwDIe880AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQoAAAAgbhAAAAAAAAAAAAAAAAA3Xa9v5lU3XevmQRxLvXzCDnHvQVV2R8S+YFXbHxICruj4l8yivTx8a+YE9NHxL5gSro+JfMC6tj1cS+ZBaLTaSe7Y7ERMztC267WCYmPiUcS70EOJd4E9u3aAAAAAAAAAAABR2HkDhY2T9qtvpjZOLUY8S3SXWcOstau20ujDWJ7uz83YfstH00cPUv7dHCvpHm/C9lp+midS/s419Ien4XslH9iHUv7ONfR5uwfZKPpovUv7ONfR5uwd/ydH00Opf2ca+k+b8H2Sj6aJ1L+zhX0jzdgr/Z0fTQ6l/Zwj0l6fgpflKPpodS/s4V9I834O+32Sj6aHUv7ONfSfN2F7JR9NF6l/Zxr6aeq4OJDBulDGpi1B7NQSMq3tPlsw1iMlZ28vO0KvDunKm/HqlLbii3Fc0ZTktt8S6Nbp4rbnEd3uR0zAXNYlP8AYjX1b+3Fwr6Y8rS8GdE4vEp2a2e0EZVyX37palduz5LdHgvsguqMnFfBs9mO0OJQIAAAAAAAAABR3H+HPocz9cf2ODW+HTgdqzz3S8TA1mpwvWbfXXZCySipcuXYdOXT23jjDTXLG07yYWRnZ+ndLTfXCxTlu5Q3TS6i5MePHk2mPEFbWtXeFNJt1LUMd5Dyq4xfFFR6JPmuW5c8YqW2iP8AqY5vaN91IXarPU7cBZlSlXXxuzol7uz4lmuGMcX4z8/lI6nLbde3I1C3VrcLGyKqlXWpbyr33MYpjjDzmPK2tab8YWwtYt6DJ+1wc549ig3THfi+AyYK8qzTtMeVrknZl126UsKuipuNmVNQj3pdrMNPWOUzPaFyzvERHlSpdPrtdVcpdFg089n1yly5/Ayn4w8pj5tJ3yfw9nsOZtaOsv8Ay+73xZnj7ssc7ZK/y5XEyHRPGyF1xa3/AJMze3mxxetqO2qkpRUl1NGqXgov9FIte5bs+N5X5q7+pL9z247Q89iKgAAAAAAAAAFHcf4c+hy/1x/Y4Nb4dOB2nwPPdLx9N0lVV3/bKabJ2WSlFuKeyfwOnLnm0xxmY2aa4ojvDNo2FbhYMqbeHic5NbPls+owzZYyX5LjrNa7SnQ8O3Bwehv4eLjk/wAL72M+SMl+ULjrNK7SrVg2w16/Nbj0VlKhFb89+X/QtlicUU8xJFZ58mvkaGszV7cjKW9DglFRm09/fsbK6jhiite+7Gce9+Utx4Tw8N1aXXXVLf8A1GnnzvvkZ8dq7Varquv1uN19UujxafwNLlKb69jPlWuLjHljtM35T4ZPJ/Htrx7L8mDjfk2ysmn1ruXyGovFrRWO0QuOsxD1TQ2NHWlvgW/pZsx91p+uP5ccueFH9Jl5fQ/vdlo1js0+mUuvhRhk7vn7xte0fltX+iZjXuwt2fG8r81d/Ul+57le0PPnuxFQAAAAAAAAAAOk8kNax9KjfDIfDxtSizn1GGcm2zbjtwdL979P9ajm+zs3deEfe/T/AFyH2dk68H3v05fxoj7Kx14V++Omr+PEfZWOsh+Wem7+njsPsrHWhD8tNM9oiX7KTrwj76aZ7REn2cnWQ/LPTNuV8B9nJ1manyswr/RT49uvhRhbT8e8t+OuXLXlSN4ZX5SUpbuMkl7idGPbZ0M+/wCl5+oeVeDkY8q42rd7rY3V00xG7nrkmMkVnvu8qVyWNs3yS6zn47zs+qmNp5+Hraf5UYONiV1StW8VzOi2lmZfKW1HK0zHtmu8r9P6OW1qfLqRI0sxLHrxL57bPpLbJ7bcUm/+T0I7Oae6oQAAAAAAAAAACWxdwIAENAVcEFVdZRR1e4GyOiLvJsKom8mzYxLbcW1Tqe3eu815McXh1abV3wW3jt6dDj6tC+G0/wAEurmcF8Nqy+hw6vBmjeJ2l5axXq2vwwKrYUKa3c+/tOjFaceKbWcmujHbJyjuxahTfpepXadPI6aKW/EbMdItEXiHLqdTknDx3RiXxotUrKo2RfJxZnkpN477OHTZq4bTyrvuz341VlTyMV7xXOVb64mqmS1Z43dmbS482Pq6ef8ADRX89zoeWkIAAAAAAAAAAAAAAANgBQCmyAbAPiCGWWPOGNXfLbo5ycVu+fI1xfleaui+lmuGMs+WvKnjnGUZyhNPlKPWZ2mK13XTWm2SKT5ZqsWurJsjk2SnZLlxs55te1YtV6d408ZLafN/ta/Hsof4lvHskupmzHlrd5+p0OXDPxG8eJZ9MUlbZN+j6N8bfU/ca9TMTEe3V9Ki1cvL9u07tNe46I7Q8vJtynb3IGAAAAAAAAAAAAAAAAAAAAAA9tufUCezdzPyGF4VGXz/APbnNi/uW3etrY/psW3prY0eO+uK620bc0xFJcugpN89dk5bUsm1rxEwx/5wv1G0W1VpTTk20raEt13NboXw1t8z3XB9Qz4o233j8puyrbo8MpbQ8MVsiVwVrO7LP9Ry5aTSNoifTAbnABAAAAAAAAAAAAAAAABG4DcBuA3AnrCtnHvgqegyE3DfeLT5xNGTHaL86vS02qxTi6Gfx5XV1FCk8ZSlY1txy7DGKZMn6+zdXNpdLE9H5s0+3c6fw8e0zM7yBAAAAAAAAAAAAAAENsCOJ+FlVDnLwAVds/VsIh3T9WwKu6z1TAjp7PUsCOnt9Swp09vqWBPTWeqYRbprG/RBd09LP1fIbQiysn4GFSpy8LAsm+7YIlEAAAAAAAAAAAAABVNgAQ2AACAFAAQKGxAKGwUCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//Z" alt="imagen">
+    <br>
+    <img src="imgHtml.JPG" alt="" srcset="">
+</body>
+</html>

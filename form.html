@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de validacion</h1>
+    <form action="/submit" method="post">
+
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <!-- Nombre Obligatorio de minimo 3 caracteres -->
+            <label for="nombre">Nombre (Minimo 3 caracteres):</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3"><br></br>
+            <!-- Correo electronico (Formato especifico) -->
+            <label for="correo">Correo Electronico:</label>
+            <input type="email" name="correo" id="correo" required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.a-zA-Z{2, }"
+            title="Formato de correo electronico: ejemplO@dominio.com"><br><br>
+            <!-- Contraseña (Obligatoria, minimo  8 caracteres, maximo 16 caracteres) -->
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="password" id="password" minlength="8"
+            maxlength="16" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@!#$%^&*]){8,}"
+            title="La contraseña debe tener entre 8 y 16 caracteres, una letra min, una may, 
+            un numero y un caracter especial"><br><br>
+            <!-- La edad debe estar entre 18 y 102 -->
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" required min="18" max="102"><br><br>
+            <!-- Fecha de nacimiento -->
+            <label for="fechaN">Fecha de nacimiento:</label>
+            <input type="date" name="fechaN" id="fechaN" required max="2030-12-31"><br><br>
+
+            <!-- Validar Genero -->
+            <label for="genero">Genero:</label><br>
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="mujer" id="mujer" required>
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="hombre" id="hombre" required>
+            <label for="otro">Otro</label>
+            <input type="radio" name="otro" id="otro" required><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Otra Informacion</legend>
+                <!-- Sitio web -->
+                <label for="website">Sitio web:</label>
+                <input type="url" name="website" id="website" required
+                pattern="https?://.+\..+"
+                title="Formato de sitio web: https://www.dominio.com"><br><br>
+
+                <!-- Cargar Archivo -->
+                <label for="file">Cargar archivo:</label>
+                <input type="file" name="file" id="file" accept=".pdf" required><br><br>
+
+                <!-- Comentarios -->
+                <label for="comentarios">Comentarios:</label>
+                <textarea name="comentarios" id="comentarios" required minlength="10" maxlength="200"></textarea><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Terminos y condiciones</legend>
+                <!-- Terminos y condiciones -->
+                <label for="terminos">Acepto terminos y condiciones</label>
+                <input type="checkbox" name="terminos" id="terminos" required><br>
+                <label for="suscripcion">Suscribase a nuestro boletin</label>
+                <input type="checkbox" name="suscripcion" id="suscripcion" required><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Acciones</legend>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

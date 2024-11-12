@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="validacion.js" method="post">
+        <fieldset>
+            <legend>Informacion Personal</legend>
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" minlength="3" required>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+            <br>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono" minlength="10" maxlength="10" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Opciones</legend>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" required></textarea>
+            <br>
+            <label for="">Desea suscribirse?</label>
+            <input type="checkbox" name="suscripcion" id="suscripcion"><br>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
+
+
+    </form>
+    
+</body>
+</html>

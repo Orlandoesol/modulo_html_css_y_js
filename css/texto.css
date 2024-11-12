@@ -1,0 +1,157 @@
+/* @font-face {
+    font-family: "Rubik Wet Paint";
+    src: url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap") format(embedded-opentype),
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.Rubik-Wet-Paint {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: orangered;
+}
+
+.normal-texto {
+    font-size: 25px;
+    color: aqua;
+    line-height: 1.5;
+}
+
+.bold-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.italic-texto {
+    font-style: italic;
+    text-align: center;
+
+}
+
+.subrayado-texto {
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.estilo-texto {
+    text-transform: uppercase;
+}
+
+/*Fondos*/
+
+.fondo {
+    width: 300px; 
+    height: 200px;
+    /* border: 3px solid greenyellow; */
+    background-color: aquamarine;
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.fondo-multiple {
+    width: 300px; 
+    height: 200px;
+    border: 3px solid greenyellow;
+    margin-top: 10px;
+    background-image: url(../image/imagen.PNG), url(../image/imagen2.JPG);
+    background-position: top left, bottom right;
+    background-size: 150px 150px, 150px 150px;
+    background-repeat: no-repeat;
+}
+
+.fondo-repeat-x {
+    width: 500px; 
+    height: 300px;
+    border: 3px solid;
+    margin-top: 10px;
+    background-image: url(../image/imagen1.JPG);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.fondo-repeat-x {
+    width: 500px; 
+    height: 300px;
+    border: 3px solid;
+    margin-top: 10px;
+    background-image: url(../image/imagen1.JPG);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.fondo-repeat-y {
+    width: 500px; 
+    height: 300px;
+    border: 3px solid;
+    margin-top: 10px;
+    background-image: url(../image/imagen1.JPG);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.fondo-space {
+    width: 500px; 
+    height: 300px;
+    border: 3px solid;
+    margin-top: 10px;
+    background-image: url(../image/imagen1.JPG);
+    background-repeat: space;
+    background-size: 80px;
+}
+
+.fondo-round {
+    width: 300px; 
+    height: 200px;
+    border: 3px solid;
+    margin-top: 10px;
+    background-image: url(../image/imagen1.JPG);
+    background-repeat: round;
+}
+
+div {
+    background: blue;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background-attachment: scroll; 
+}
+
+.mi-caja {
+    width: 300px;
+    height: 200px;
+    /* padding: 10px; */
+/*     padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 20px; */
+    /*       top  right  bottom left*/
+    /* padding: 10px 50px  20px 30px; */
+    /*     top+bottom  left+right */
+    padding: 90px 10px;
+    color: white;
+    background-color: brown;
+}
+
+.otra-caja {
+    width: 300px;
+    height: 200px;
+    background-color: bisque;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+
